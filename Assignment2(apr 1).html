@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+             background-color: gray; /* Color Code Google */
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: lightblue; /* Darker color for main container */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-info {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+        .profile-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .contact-info {
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .summary-container {
+            border: 1px solid lightgreen;
+            border-radius: 8px;
+            padding: 10px;
+            background-color: #fff; /* Lighter color for summary container */
+            margin-bottom: 20px;
+        }
+
+        .summary-container h2 {
+            margin: 0;
+            font-size: 18px;
+            color: #333;
+            text-align: center;
+        }
+
+        .summary-container ul {
+            padding-left: 20px;
+            margin: 10px 0 0 0;
+            color: #555;
+        }
+
+        .summary-container li {
+            margin-bottom: 5px;
+        }
+        .exit-button {
+    display: block;
+    margin: 0 auto; /* This will center the button horizontally */
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.exit-button:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="profile-info">
+        <div class="profile-photo">
+            <img src="Passport Latest.jpg" alt="Profile Photo">
+        </div>
+        <div class="name">Harish.S </div>
+        <div class="contact-info">
+            <p>Email: harishsubramani056@gmail.com</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/harish-s-78920b249" target="_blank">Your LinkedIn Profile</a></p>
+        </div>
+    </div>
+    
+    <div class="summary-container">
+        <h2>Summary</h2>
+        <ul>
+        <li>Highly Self Motivated Junior Developer</li>
+            <li>2 plus years of experience in the Retail domain seeking.</li>
+            <li>Ability to develop and design websites as per the end-user requirement..</li>
+        </ul>
+    </div>
+
+    <div class="summary-container">
+        <h2>Experience</h2>
+        <p><strong>Jr Software Engineer</strong></p>
+        <p>2022 - 2024</p>
+        <p>XYZ Company</p>
+        <ul>
+            <li>Responsible for handling a multi development projects, ensuring optimal software delivery.</li>
+            <li> Assisted senior developers in code and design reviews, improving software.</li>
+            <li> Successfully delivered 5 micro-projects contributing significantly to the main developmental project.</li>
+            <li>Played a key role in the successful deployment of a major software update leading to a 25% user growth. </li>
+            
+        </ul>
+    </div>
+    <button class="exit-button" id="exitButton">Exit</button> 
+
+</div>
+<script>
+  document.getElementById('exitButton').addEventListener('click', function() {
+      if(confirm("Are you Leaving Me?") ) {
+          window.close();
+      }
+  });
+</script>
+
+</body>
+</html>
